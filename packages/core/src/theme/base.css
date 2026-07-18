@@ -1,0 +1,129 @@
+:root {
+  /* Fallback values so the page never flashes unstyled before ThemeProvider mounts. */
+  --qf-color-background: #0a0a12;
+  --qf-color-surface: #14141f;
+  --qf-color-surface-hover: #1c1c2b;
+  --qf-color-border: #2a2a3d;
+  --qf-color-primary: #38bdf8;
+  --qf-color-primary-foreground: #05131a;
+  --qf-color-secondary: #a78bfa;
+  --qf-color-accent: #facc15;
+  --qf-color-success: #4ade80;
+  --qf-color-warning: #fbbf24;
+  --qf-color-danger: #f87171;
+  --qf-color-text-primary: #f4f4f8;
+  --qf-color-text-secondary: #b5b5c8;
+  --qf-color-text-muted: #83839b;
+  --qf-tier-bronze: #cd7f32;
+  --qf-tier-silver: #c0c0c0;
+  --qf-tier-gold: #ffd700;
+  --qf-tier-platinum: #b9f2ff;
+  --qf-font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --qf-font-body: 'Inter', system-ui, sans-serif;
+  --qf-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --qf-radius-sm: 6px;
+  --qf-radius-md: 12px;
+  --qf-radius-lg: 20px;
+  --qf-radius-full: 9999px;
+  --qf-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --qf-shadow-md: 0 4px 12px rgb(0 0 0 / 0.35);
+  --qf-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.45);
+  --qf-shadow-glow: 0 0 24px rgb(56 189 248 / 0.35);
+  --qf-duration-fast: 120ms;
+  --qf-duration-base: 220ms;
+  --qf-duration-slow: 420ms;
+
+  /* Semantic z-index scale — extend here rather than reaching for arbitrary values. */
+  --qf-z-sticky: 10;
+  --qf-z-cursor: 60;
+}
+
+/*
+ * Light-mode fallback. The blocking inline script in index.html sets
+ * data-qf-mode on <html> before first paint (reading localStorage /
+ * prefers-color-scheme), and useThemeMode keeps it in sync after mount —
+ * so this block, not the dark :root above, is what actually paints first
+ * for light-mode visitors. Generic framework default; a site's own
+ * ThemeProvider values take over on mount regardless.
+ */
+:root[data-qf-mode='light'] {
+  --qf-color-background: #f7f7fa;
+  --qf-color-surface: #ffffff;
+  --qf-color-surface-hover: #eceef2;
+  --qf-color-border: #d8dae0;
+  --qf-color-primary: #0891b2;
+  --qf-color-primary-foreground: #ffffff;
+  --qf-color-secondary: #6d5a9e;
+  --qf-color-accent: #9a4f2f;
+  --qf-color-success: #15803d;
+  --qf-color-warning: #92400e;
+  --qf-color-danger: #b91c1c;
+  --qf-color-text-primary: #101113;
+  --qf-color-text-secondary: #45474e;
+  --qf-color-text-muted: #6b6e76;
+  --qf-tier-bronze: #9a5000;
+  --qf-tier-silver: #5f5f5f;
+  --qf-tier-gold: #7a5900;
+  --qf-tier-platinum: #0f7a8c;
+  --qf-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.08);
+  --qf-shadow-md: 0 4px 12px rgb(0 0 0 / 0.08);
+  --qf-shadow-lg: 0 12px 32px rgb(0 0 0 / 0.1);
+  --qf-shadow-glow: none;
+}
+
+body {
+  background-color: var(--qf-color-background);
+  color: var(--qf-color-text-primary);
+  font-family: var(--qf-font-body);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--qf-color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--qf-color-border);
+  border-radius: var(--qf-radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--qf-color-surface-hover);
+}
+
+[data-qf-background='grid'] body {
+  background-image:
+    linear-gradient(var(--qf-color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--qf-color-border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-color: var(--qf-color-background);
+  background-attachment: fixed;
+  opacity-transition: none;
+}
+
+[data-qf-background='dots'] body {
+  background-image: radial-gradient(var(--qf-color-border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-color: var(--qf-color-background);
+  background-attachment: fixed;
+}
+
+[data-qf-background='scanlines'] body {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgb(255 255 255 / 0.02),
+    rgb(255 255 255 / 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  background-color: var(--qf-color-background);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

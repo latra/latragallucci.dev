@@ -1,0 +1,55 @@
+/*
+ * Tailwind v4 theme mapping: exposes every questfolio design token
+ * (written at runtime by ThemeProvider as --qf-* CSS variables) as a
+ * Tailwind utility. Consuming apps just do:
+ *   @import "tailwindcss";
+ *   @import "questfolio/theme-tokens.css";
+ * No tailwind.config.js needed, no component ever hardcodes a color.
+ *
+ * Tailwind v4 excludes node_modules from its automatic source scan, which
+ * would normally hide every className used inside questfolio's own
+ * components. @source paths are resolved relative to the file that
+ * declares them (not the importing app's CSS entry), so declaring it here
+ * — right next to dist/index.js — finds them regardless of how deep this
+ * package ends up nested inside the consumer's node_modules.
+ */
+@source "./*.js";
+
+@theme {
+  --color-background: var(--qf-color-background);
+  --color-surface: var(--qf-color-surface);
+  --color-surface-hover: var(--qf-color-surface-hover);
+  --color-border: var(--qf-color-border);
+  --color-primary: var(--qf-color-primary);
+  --color-primary-foreground: var(--qf-color-primary-foreground);
+  --color-secondary: var(--qf-color-secondary);
+  --color-accent: var(--qf-color-accent);
+  --color-success: var(--qf-color-success);
+  --color-warning: var(--qf-color-warning);
+  --color-danger: var(--qf-color-danger);
+  --color-text-primary: var(--qf-color-text-primary);
+  --color-text-secondary: var(--qf-color-text-secondary);
+  --color-text-muted: var(--qf-color-text-muted);
+  --color-tier-bronze: var(--qf-tier-bronze);
+  --color-tier-silver: var(--qf-tier-silver);
+  --color-tier-gold: var(--qf-tier-gold);
+  --color-tier-platinum: var(--qf-tier-platinum);
+
+  --font-heading: var(--qf-font-heading);
+  --font-body: var(--qf-font-body);
+  --font-mono: var(--qf-font-mono);
+
+  --radius-qsm: var(--qf-radius-sm);
+  --radius-qmd: var(--qf-radius-md);
+  --radius-qlg: var(--qf-radius-lg);
+  --radius-qfull: var(--qf-radius-full);
+
+  --shadow-qsm: var(--qf-shadow-sm);
+  --shadow-qmd: var(--qf-shadow-md);
+  --shadow-qlg: var(--qf-shadow-lg);
+  --shadow-glow: var(--qf-shadow-glow);
+
+  --duration-fast: var(--qf-duration-fast);
+  --duration-base: var(--qf-duration-base);
+  --duration-slow: var(--qf-duration-slow);
+}

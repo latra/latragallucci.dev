@@ -1,0 +1,22 @@
+---
+id: stomp-debugger
+title: STOMP Debugger
+description: A web-based debugging client for testing STOMP message broker connections, topic subscriptions and real-time messages.
+status: completed
+date: 2025-12-02
+updatedAt: 2025-12-02
+categories: [Tools, Developer Tools, Networking]
+technologies: [STOMP]
+difficulty: 1
+featured: false
+repo: https://github.com/latra/STOMP_webclient
+hoursInvested: 15
+---
+
+**STOMP Debugger** is a lightweight web client built to test and debug **STOMP** (Simple Text Oriented Messaging Protocol) servers without reaching for a full messaging stack or a heavier client. It connects to any STOMP broker over **WebSocket** directly from the browser.
+
+The client lets you fill in a server URL, attach custom authentication headers (tokens, session identifiers, etc.), and connect. From there you can subscribe to any destination with custom headers and watch messages arrive in a real-time viewer, which makes it useful for verifying broker behavior, checking message formats, or debugging subscription issues during development.
+
+Multiple connection configurations can be saved and reused, all persisted in the browser's **localStorage**, so switching between environments or servers doesn't require re-entering the same details every time.
+
+The project runs locally with a simple `npm install` and `npm start`, keeping the setup minimal for a tool meant to be reached for quickly whenever a STOMP integration needs poking at.

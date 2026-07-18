@@ -1,0 +1,49 @@
+{
+  "name": "Quiet Signal",
+  "colors": {
+    "background": "#0d0f13",
+    "surface": "#17181d",
+    "surfaceHover": "#20232a",
+    "border": "#292c34",
+    "primary": "#22d3ee",
+    "primaryForeground": "#04222b",
+    "secondary": "#a29cbd",
+    "accent": "#c199ab",
+    "success": "#34d399",
+    "warning": "#fbbf24",
+    "danger": "#f87171",
+    "textPrimary": "#f1f2f7",
+    "textSecondary": "#b0b3bc",
+    "textMuted": "#878a95"
+  },
+  "achievementTiers": {
+    "bronze": "#cd7f32",
+    "silver": "#c0c0c0",
+    "gold": "#ffd700",
+    "platinum": "#67e8f9"
+  },
+  "typography": {
+    "fontHeading": "'Space Grotesk', system-ui, sans-serif",
+    "fontBody": "'Inter', system-ui, sans-serif",
+    "fontMono": "'JetBrains Mono', ui-monospace, monospace"
+  },
+  "radii": {
+    "sm": "3px",
+    "md": "3px",
+    "lg": "3px",
+    "full": "3px"
+  },
+  "shadows": {
+    "sm": "0 1px 2px rgb(0 0 0 / 0.4)",
+    "md": "0 4px 12px rgb(0 0 0 / 0.35)",
+    "lg": "0 12px 32px rgb(0 0 0 / 0.45)",
+    "glow": "none"
+  },
+  "animation": {
+    "enabled": true,
+    "durationFast": "120ms",
+    "durationBase": "220ms",
+    "durationSlow": "420ms"
+  },
+  "backgroundPattern": "grid"
+}

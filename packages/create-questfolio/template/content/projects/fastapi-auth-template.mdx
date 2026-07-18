@@ -1,0 +1,22 @@
+---
+id: fastapi-auth-template
+title: FastAPI Auth Template
+description: A reusable FastAPI starter with authentication already wired in — JWT, optional Google OAuth, and a swappable SQL database — so new backends don't start from zero.
+status: building
+hoursInvested: 10
+date: 2026-03-02
+updatedAt: 2026-04-19
+categories: [Backend, API, Authentication]
+technologies: [Python, FastAPI, PostgreSQL, Docker]
+difficulty: 3
+featured: false
+repo: https://github.com/latra/fastapi-auth-template
+---
+
+**FastAPI Auth Template** exists for one reason: being tired of rebuilding the same authentication layer at the start of every new **FastAPI** project. It's a starter template with the boring-but-necessary parts already solved.
+
+Out of the box it covers email/password registration and login backed by **JWT** tokens, plus optional **Google OAuth 2.0** with automatic account linking — and when Google auth is switched off in config, its endpoints and dependencies aren't even imported, keeping the footprint minimal for projects that don't need it.
+
+Data lives behind **SQLAlchemy**, configurable to run on **SQLite** for quick local development or **PostgreSQL** in production, with settings split between `.env` for secrets and `config.yaml` for everything else. **Pydantic** handles validation, CORS origins are configurable per deployment, and a `Dockerfile` covers containerized setup. Dependencies are managed through **uv**, falling back to pip where needed.
+
+The project stays organized into config, database, auth utilities, models, schemas and route/service layers, leaning on FastAPI's dependency injection to keep those pieces decoupled. It's an actively maintained template rather than a finished product — new projects fork it, and whatever gets learned or improved along the way tends to make its way back in.

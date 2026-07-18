@@ -1,0 +1,20 @@
+---
+id: bloodbowl-manager-bot
+title: Blood Bowl Manager Bot
+description: A Discord bot for tracking Blood Bowl league tournaments — teams, rounds and match schedules pulled live from GoblinSpy.
+status: completed
+date: 2020-05-16
+updatedAt: 2020-05-19
+categories: [Bots, Gaming, Community]
+technologies: [Python]
+difficulty: 2
+featured: false
+hoursInvested: 20
+repo: https://github.com/latra/BloodBowlManagerBot
+---
+
+**Blood Bowl Manager Bot** brings tabletop league management into Discord for **Blood Bowl**, the Warhammer Fantasy take on American football. Instead of jumping to a website to check who's playing whom this round, a league's community can query everything without leaving the server.
+
+Configuring a tournament with `bb2!config` binds the bot to a specific league and tournament name from **GoblinSpy** (mordrek.com's Blood Bowl league data source), after which `bb2!teams` lists the competing rosters and `bb2!round` shows the current or a specified round's matchups. `bb2!reset` clears the configuration, and `bb2!help` lists everything above for anyone who wanders in mid-season.
+
+Built with **Python**, **discord.py** and a local **SQLite** database to hold league state between commands, it was a small collaborative build with Mikel Ocejo, standing on top of Andreas Harrison's GoblinSpy data.

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-18T00:00:00.000Z",
+  "title": "Design System: Paula Gallucci Zurita — Questfolio",
+  "extensions": {
+    "colorMeta": {
+      "background": { "role": "neutral", "displayName": "Quiet Void", "canonical": "oklch(16.8% 0.009 264.3)", "tonalRamp": ["#090b0f", "#27292d", "#45484d", "#66696e", "#898c92", "#abaeb4", "#ced1d7", "#ebeef5"] },
+      "surface": { "role": "neutral", "displayName": "Quiet Panel", "canonical": "oklch(21.0% 0.010 276.6)", "tonalRamp": ["#0a0b0f", "#27292e", "#46474d", "#67686f", "#8a8c92", "#acadb4", "#cfd0d8", "#eceef5"] },
+      "surface-hover": { "role": "neutral", "displayName": "Quiet Panel Hover", "canonical": "oklch(25.6% 0.014 267.0)", "tonalRamp": ["#090b11", "#262930", "#44484f", "#656971", "#888c95", "#aaaeb7", "#cdd1da", "#eaeef8"] },
+      "border": { "role": "neutral", "displayName": "Quiet Line", "canonical": "oklch(29.3% 0.015 269.2)", "tonalRamp": ["#090b12", "#262931", "#444750", "#656972", "#888c96", "#aaaeb8", "#cdd1db", "#eaeef9"] },
+      "primary": { "role": "primary", "displayName": "Signal Cyan", "canonical": "oklch(79.7% 0.134 211.5)", "tonalRamp": ["#00112a", "#00354e", "#005770", "#007b95", "#00a0ba", "#00c4de", "#46e8ff", "#6dffff"] },
+      "primary-foreground": { "role": "neutral", "displayName": "Deep Cyan Ink", "canonical": "oklch(23.5% 0.039 221.6)", "tonalRamp": ["#000e17", "#102d36", "#2f4d57", "#506e79", "#73929d", "#94b4c0", "#b6d7e3", "#d3f5ff"] },
+      "secondary": { "role": "secondary", "displayName": "Static Violet, muted", "canonical": "oklch(70.9% 0.048 293.5)", "tonalRamp": ["#0d061d", "#2a243e", "#49435f", "#6a6482", "#8d87a7", "#afa9ca", "#d2ccee", "#efe9ff"] },
+      "accent": { "role": "tertiary", "displayName": "Alert Magenta, muted", "canonical": "oklch(72.5% 0.053 349.7)", "tonalRamp": ["#1a020e", "#3c1d2d", "#5e3c4c", "#815c6d", "#a67f91", "#c9a1b3", "#edc3d6", "#ffe1f4"] },
+      "success": { "role": "status", "displayName": "Success Green", "canonical": "oklch(77.3% 0.153 163.2)", "tonalRamp": ["#001900", "#003c0f", "#005e2e", "#00824f", "#00a871", "#27cb92", "#5bf0b4", "#7dffd1"] },
+      "warning": { "role": "status", "displayName": "Warning Amber", "canonical": "oklch(83.7% 0.164 84.4)", "tonalRamp": ["#270000", "#4c1600", "#6f3900", "#945c00", "#ba8000", "#dea300", "#ffc731", "#ffe459"] },
+      "danger": { "role": "status", "displayName": "Danger Red", "canonical": "oklch(71.1% 0.166 22.2)", "tonalRamp": ["#380000", "#630000", "#8c0019", "#b5333a", "#df5a5c", "#ff7e7d", "#ffa19f", "#ffbfbb"] },
+      "text-primary": { "role": "neutral", "displayName": "Signal White", "canonical": "oklch(96.2% 0.007 277.2)", "tonalRamp": ["#0a0b0e", "#28292c", "#47474b", "#68696d", "#8b8c90", "#adaeb2", "#d0d1d5", "#edeef3"] },
+      "text-secondary": { "role": "neutral", "displayName": "Muted Slate", "canonical": "oklch(76.7% 0.013 271.2)", "tonalRamp": ["#090b11", "#262930", "#45474f", "#666971", "#898c94", "#abaeb7", "#ced1da", "#ebeef8"] },
+      "text-muted": { "role": "neutral", "displayName": "Deep Slate", "canonical": "oklch(63.5% 0.017 273.7)", "tonalRamp": ["#090b12", "#262831", "#454751", "#666873", "#898c97", "#aaadb9", "#cdd0dc", "#ebeefa"] },
+      "tier-bronze": { "role": "tier", "displayName": "Bronze", "canonical": "oklch(66.6% 0.132 61.3)", "tonalRamp": ["#2b0000", "#520900", "#773000", "#9d5300", "#c47728", "#e9994f", "#ffbc73", "#ffda90"] },
+      "tier-silver": { "role": "tier", "displayName": "Silver", "canonical": "oklch(80.8% 0.000 89.9)", "tonalRamp": ["#0b0b0b", "#292929", "#484848", "#696969", "#8c8c8c", "#aeaeae", "#d1d1d1", "#eeeeee"] },
+      "tier-gold": { "role": "tier", "displayName": "Gold", "canonical": "oklch(88.7% 0.182 95.3)", "tonalRamp": ["#210000", "#451e00", "#664000", "#8a6300", "#af8800", "#d2aa00", "#f6ce00", "#ffec39"] },
+      "tier-platinum": { "role": "tier", "displayName": "Platinum", "canonical": "oklch(86.5% 0.115 207.1)", "tonalRamp": ["#001323", "#003545", "#005767", "#007a8a", "#009fb0", "#39c2d3", "#65e6f7", "#86ffff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero profile name only." },
+      "headline": { "displayName": "Headline", "purpose": "Rare high-emphasis section closers (e.g. \"Let's talk\")." },
+      "title": { "displayName": "Title", "purpose": "Section headers and card titles (project, achievement names)." },
+      "body": { "displayName": "Body", "purpose": "Bio copy and descriptions." },
+      "label": { "displayName": "Label", "purpose": "Uppercase tracked micro-labels on stat cards." },
+      "data": { "displayName": "Data", "purpose": "Monospace numeric readouts (XP, hours, counts) on stat cards." }
+    },
+    "shadows": [
+      { "name": "glow", "value": "none", "purpose": "Retired. Was a cyan bloom on the hero avatar and primary CTAs; removed in the Quiet Signal revision. Kept as a schema field resolving to no shadow." },
+      { "name": "sm", "value": "0 1px 2px rgb(0 0 0 / 0.4)", "purpose": "Reserved for low-emphasis lift; not used by a shipped component." },
+      { "name": "md", "value": "0 4px 12px rgb(0 0 0 / 0.35)", "purpose": "Reserved for future overlay-style surfaces (dropdowns, popovers)." },
+      { "name": "lg", "value": "0 12px 32px rgb(0 0 0 / 0.45)", "purpose": "Reserved for modal-level surfaces that need to lift off the page." }
+    ],
+    "motion": [
+      { "name": "duration-fast", "value": "120ms", "purpose": "Hover/focus color and border transitions." },
+      { "name": "duration-base", "value": "220ms", "purpose": "Default state-change transition (card hover, nav active state)." },
+      { "name": "duration-slow", "value": "420ms", "purpose": "Larger entrance transitions." },
+      { "name": "cursor-spring", "value": "damping 28 / stiffness 350 / mass 0.4", "purpose": "Spring inertia on the cursor-trail dot's position." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ],
+    "zIndex": [
+      { "name": "sticky", "value": 10, "purpose": "Sticky navbar." },
+      { "name": "cursor", "value": 60, "purpose": "Cursor-trail dot — always renders above everything else." }
+    ],
+    "lightMode": {
+      "source": "config/theme.light.json",
+      "note": "Not a naive inversion. Every color used as text/icon/small-fill is independently re-tuned in OKLCH (same hue, different lightness) to clear 4.5:1 against every light surface — see DESIGN.md section 2, 'Light Mode'.",
+      "colors": {
+        "background": "#f7f8fb",
+        "surface": "#edeef3",
+        "surface-hover": "#dfe1e7",
+        "border": "#cbced4",
+        "primary": "#006b84",
+        "primary-foreground": "#f7f8fb",
+        "text-primary": "#101115",
+        "text-secondary": "#404249",
+        "text-muted": "#60636c",
+        "success": "#007341",
+        "warning": "#8e5600",
+        "danger": "#b5333a",
+        "tier-bronze": "#9a5000",
+        "tier-silver": "#636363",
+        "tier-gold": "#845d00",
+        "tier-platinum": "#006e7e"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single dominant action on a screen (View projects, mailto CTA). No shadow.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg class=\"ds-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>View projects</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #22d3ee; color: #04222b; border-radius: 3px; padding: 8px 16px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500; text-decoration: none; transition: filter 120ms; } .ds-btn-primary:hover, .ds-btn-primary:focus-visible { filter: brightness(1.1); } .ds-btn-primary:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action (Contact, Repository, Demo links).",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Contact</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: #b0b3bc; border: 1px solid #292c34; border-radius: 3px; padding: 8px 16px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; text-decoration: none; transition: color 120ms, border-color 120ms; } .ds-btn-ghost:hover, .ds-btn-ghost:focus-visible { border-color: rgba(34, 211, 238, 0.5); color: #f1f2f7; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-primary",
+      "description": "3px-radius status tag; 10%-tint background, full-strength text. One variant per project/achievement status.",
+      "html": "<span class=\"ds-badge ds-badge-primary\">In progress</span> <span class=\"ds-badge ds-badge-success\">Completed</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 4px; border-radius: 3px; border: 1px solid transparent; padding: 2px 8px; font-size: 12px; font-family: 'Inter', system-ui, sans-serif; white-space: nowrap; } .ds-badge-primary { background: rgba(34, 211, 238, 0.1); border-color: rgba(34, 211, 238, 0.3); color: #22d3ee; } .ds-badge-success { background: rgba(52, 211, 153, 0.1); border-color: rgba(52, 211, 153, 0.3); color: #34d399; }"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "card",
+      "refersTo": "stat-card",
+      "description": "Square-edged HUD data tile — the system's one deliberate exception to the uniform 3px radius.",
+      "html": "<div class=\"ds-stat-card\"><span class=\"ds-stat-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 15 9 22 10 17 15 18 22 12 18.5 6 22 7 15 2 10 9 9 12 2Z\"/></svg></span><div class=\"ds-stat-body\"><p class=\"ds-stat-label\">Total XP</p><p class=\"ds-stat-value\">4820</p></div></div>",
+      "css": ".ds-stat-card { display: flex; align-items: center; gap: 12px; border-radius: 0; border: 2px solid #292c34; background: #17181d; padding: 12px; transition: border-color 120ms; } .ds-stat-card:hover { border-color: rgba(34, 211, 238, 0.6); } .ds-stat-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; flex-shrink: 0; border-radius: 0; border: 1px solid #292c34; background: #0d0f13; color: #b0b3bc; } .ds-stat-label { margin: 0; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #878a95; } .ds-stat-value { margin: 4px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 24px; line-height: 1; color: #f1f2f7; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "3px-radius content card for an unlocked/completed project. No shadow.",
+      "html": "<a class=\"ds-project-card\" href=\"#\"><span class=\"ds-badge ds-badge-success\">Completed</span><h3 class=\"ds-project-title\">Nebula Renderer</h3><p class=\"ds-project-desc\">A real-time WebGL particle system for procedural space backgrounds.</p><div class=\"ds-project-tags\"><span class=\"ds-badge ds-badge-default\">React</span><span class=\"ds-badge ds-badge-default\">WebGL</span></div></a>",
+      "css": ".ds-project-card { display: flex; flex-direction: column; gap: 8px; border-radius: 3px; border: 1px solid #292c34; background: #17181d; padding: 16px; text-decoration: none; transition: border-color 120ms, background-color 120ms; } .ds-project-card:hover { border-color: rgba(34, 211, 238, 0.5); background-color: #20232a; } .ds-project-title { margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 18px; color: #f1f2f7; } .ds-project-desc { margin: 0; font-size: 14px; color: #b0b3bc; } .ds-project-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; } .ds-badge-default { background: #20232a; border-color: #292c34; color: #b0b3bc; }"
+    },
+    {
+      "name": "Locked Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "The system's curiosity-over-absence pattern: grayscale + dashed border, content hidden behind '???'.",
+      "html": "<div class=\"ds-project-card ds-project-card--locked\"><span class=\"ds-badge ds-badge-muted\">???</span><h3 class=\"ds-project-title\">???</h3><p class=\"ds-project-desc\">This achievement is still locked.</p></div>",
+      "css": ".ds-project-card--locked { border-style: dashed; opacity: 0.6; filter: grayscale(1); } .ds-badge-muted { background: transparent; border-color: #292c34; color: #878a95; }"
+    },
+    {
+      "name": "Nav Item",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Top nav link, default and active states.",
+      "html": "<a class=\"ds-nav-item ds-nav-item--active\" href=\"#\">Home</a> <a class=\"ds-nav-item\" href=\"#\">Projects</a>",
+      "css": ".ds-nav-item { display: inline-flex; align-items: center; gap: 4px; border-radius: 3px; padding: 6px 12px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: #b0b3bc; text-decoration: none; transition: background-color 120ms, color 120ms; } .ds-nav-item:hover { background: #20232a; color: #f1f2f7; } .ds-nav-item--active { background: rgba(34, 211, 238, 0.1); color: #22d3ee; }"
+    },
+    {
+      "name": "Achievement Card",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature component: tier-colored icon ring, XP reward badge that never grays out.",
+      "html": "<div class=\"ds-achievement-card\"><span class=\"ds-achievement-icon\" style=\"border-color:#ffd700;color:#ffd700;\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M8 21h8\"/><path d=\"M12 17v4\"/><path d=\"M7 4h10v5a5 5 0 0 1-10 0V4Z\"/></svg></span><div class=\"ds-achievement-body\"><p class=\"ds-achievement-name\">First Deploy</p><p class=\"ds-achievement-desc\">Shipped a project to production.</p></div><span class=\"ds-badge ds-badge-primary\">+250 XP</span></div>",
+      "css": ".ds-achievement-card { display: flex; align-items: center; gap: 12px; border-radius: 3px; border: 1px solid #292c34; background: #17181d; padding: 12px; } .ds-achievement-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 9999px; border-width: 2px; border-style: solid; } .ds-achievement-name { margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 14px; color: #f1f2f7; } .ds-achievement-desc { margin: 0; font-size: 12px; color: #b0b3bc; }"
+    },
+    {
+      "name": "Cursor Dot",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "New signature component. A small Signal Cyan dot that trails the real cursor with spring inertia; grows and brightens over interactive elements. Absent on touch devices and under reduced motion.",
+      "html": "<div class=\"ds-cursor-dot\" aria-hidden=\"true\"></div>",
+      "css": ".ds-cursor-dot { position: fixed; left: 0; top: 0; width: 24px; height: 24px; border-radius: 9999px; background: #22d3ee; opacity: 0.5; transform: translate(-50%, -50%) scale(0.35); pointer-events: none; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1); z-index: 60; } .ds-cursor-dot--active { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }"
+    },
+    {
+      "name": "Theme Mode Toggle",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "New signature component. One icon button in the navbar cycles light -> dark -> auto -> light. Icon crossfades with a small rotate on change; accessible label states current mode and what the next click switches to.",
+      "html": "<button class=\"ds-theme-toggle\" aria-label=\"Dark theme. Switch to auto mode.\" title=\"Dark theme\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\"/></svg></button>",
+      "css": ".ds-theme-toggle { position: relative; display: flex; height: 36px; width: 36px; flex-shrink: 0; align-items: center; justify-content: center; overflow: hidden; border-radius: 3px; border: 1px solid #292c34; background: transparent; color: #b0b3bc; cursor: pointer; transition: color 120ms, border-color 120ms; } .ds-theme-toggle:hover, .ds-theme-toggle:focus-visible { border-color: rgba(34, 211, 238, 0.5); color: #22d3ee; }"
+    },
+    {
+      "name": "Timeline Item (large tier)",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "New signature pattern: three size tiers by significance (education/experience/achievement = large, milestone/project-completed = medium, project-started = small). Marker height and the connecting rail's start offset always share the same Tailwind step so the rail never kinks between tiers.",
+      "html": "<div class=\"ds-timeline-item\"><div class=\"ds-timeline-gutter\"><span class=\"ds-timeline-marker\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 10v6M2 10l10-5 10 5-10 5-10-5Z\"/></svg></span></div><div class=\"ds-timeline-body\"><p class=\"ds-timeline-date\">2025</p><p class=\"ds-timeline-title\">Started at Eurecat</p><p class=\"ds-timeline-desc\">Software engineer researcher.</p></div></div>",
+      "css": ".ds-timeline-item { display: flex; gap: 16px; padding-bottom: 48px; } .ds-timeline-gutter { display: flex; width: 48px; flex-shrink: 0; justify-content: center; } .ds-timeline-marker { display: flex; height: 44px; width: 44px; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; border: 2px solid rgba(34, 211, 238, 0.4); background: #17181d; color: #22d3ee; } .ds-timeline-body { flex: 1; min-width: 0; padding-top: 4px; } .ds-timeline-date { margin: 0; font-size: 12px; color: #878a95; } .ds-timeline-title { margin: 0; font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 16px; font-weight: 500; color: #f1f2f7; } .ds-timeline-desc { margin: 0; font-size: 14px; color: #b0b3bc; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Quiet Signal",
+    "overview": "The portfolio was \"The Cyber Nebula\": three neon signal colors and a cyan glow against a blue-violet-tinted void. This revision strips that back to one instrument, dialed low. The background, surfaces, borders, and text are now nearly grayscale — the same cool undertone as before, but pulled down to a whisper of chroma rather than a visible tint. Against that quiet field, exactly one color still fires: Signal Cyan. No glow bloom carries it anymore; the color itself, used sparingly, is the whole signal. Violet and magenta didn't disappear — they're still present as barely-there dusty echoes in case anything ever needs a second neutral-ish tone, but they no longer read as \"color\" to a viewer. Corners are uniformly 3px everywhere in the system — not the sharp 0px of a terminal, not the soft 10-18px pill language of a generic SaaS product, but a single quiet value repeated without variation. A small cyan dot trails the real cursor with a touch of spring inertia: the one deliberately alive, playful gesture in an otherwise very quiet system. This system explicitly rejects the generic SaaS-neon-gradient look, and also rejects its own former self: no bloom, no multi-color signal chorus, no soft varied radius scale.",
+    "keyCharacteristics": [
+      "Near-monochrome neutrals (background, surface, border, text) — the same cool undertone as before, chroma reduced to a whisper",
+      "Exactly one active color in the whole system: Signal Cyan. No shadow-based glow anywhere",
+      "One uniform 3px corner radius everywhere — no scale, no pills, no sharp 0px terminal look either",
+      "A small cyan cursor-trail dot with spring inertia is the system's one overtly playful gesture, always paired with a native, visible cursor",
+      "Locked or pending content stays visible as grayscale + dashed border — curiosity over absence",
+      "Motion is quick and functional (120-420ms); the cursor dot is the one place spring easing is used, and only there"
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Signal Cyan is the only color in the system allowed to read as \"color\" to a viewer. Violet and magenta exist only as muted, near-gray echoes held in reserve. Status colors and achievement tiers are functional, not brand color, and are the only other exception.", "section": "colors" },
+      { "name": "The No-Glow Rule", "body": "Nothing in this system casts a colored shadow. Presence is carried by the color and the geometry themselves, at rest, not by a bloom that appears on top of them.", "section": "elevation" },
+      { "name": "The One Heading Font Rule", "body": "Space Grotesk is the only typeface used for anything that names or labels a section or entity — headings, titles, nav items, the profile name. Inter is reserved for sentences; JetBrains Mono is reserved for numbers.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "No component gets a shadow just for being a container, and no component gets a shadow for being important either. Shadows are reserved for genuine overlay surfaces that lift off the page.", "section": "elevation" },
+      { "name": "The Re-Lit, Not Inverted Rule", "body": "Light mode is not background: white with every color otherwise untouched. Any color used as text, an icon, or a small fill must be re-tuned per mode to clear contrast — same hue, different lightness — never assumed to carry over from dark mode unchanged.", "section": "colors" }
+    ],
+    "dos": [
+      "Do treat Signal Cyan as the only color that reads as \"color\" — everything else is a near-gray neutral, a muted echo, or a functional status/tier color.",
+      "Do keep every corner in the system at the same 3px radius — the uniformity is the point, not the specific value.",
+      "Do use a 1px Quiet Line border, never a shadow, to separate any surface from Quiet Void.",
+      "Do keep the cursor dot subtle and skip it entirely on touch devices and under reduced motion.",
+      "Do render locked or pending content as grayscale + dashed border, never simply omit it — the point is curiosity, not absence.",
+      "Do keep Space Grotesk for anything that names a section or entity, Inter for sentences, and JetBrains Mono for numbers — never blend the three within one text block.",
+      "Do re-tune any new color for light mode independently in theme.light.json — same hue, a lightness that actually clears contrast."
+    ],
+    "donts": [
+      "Don't use gradient-clip text, glassmorphism panels, or purple-to-pink hero blobs — the generic SaaS-neon-dashboard look this system explicitly rejects.",
+      "Don't add a glow, bloom, or any colored shadow to any element, no matter how important — this system explicitly retired that move.",
+      "Don't use a soft varied radius scale (4/10/18px-style pills and rounded cards) — one radius, everywhere.",
+      "Don't reactivate the muted secondary/tertiary echoes at full saturation.",
+      "Don't fill a badge with a solid color — the 10%-opacity tint is the badge.",
+      "Don't ship a light-mode color that's a naive white-background inversion without checking contrast — Signal Cyan alone drops from 10.6:1 to 1.7:1 doing that.",
+      "Don't round a stat card's corners — its square edge is what marks it as a data tile, now the system's one deliberate exception.",
+      "Don't hide the native cursor or make any interaction depend on the cursor dot being visible — it's decorative, not functional.",
+      "Don't add bounce/elastic easing or celebratory motion (confetti, cartoon pop-ins) to achievement unlocks — the tone is earned and quiet, never toy-like."
+    ]
+  }
+}

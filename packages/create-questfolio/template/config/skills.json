@@ -1,0 +1,12 @@
+{
+  "React": { "icon": "Atom", "color": "#61dafb", "category": "Frontend" },
+  "TypeScript": { "icon": "FileCode2", "color": "#3178c6", "category": "Frontend" },
+  "TailwindCSS": { "icon": "Palette", "color": "#38bdf8", "category": "Frontend" },
+  "Node.js": { "icon": "Server", "color": "#8cc84b", "category": "Backend" },
+  "PostgreSQL": { "icon": "Database", "color": "#4169e1", "category": "Backend" },
+  "GraphQL": { "icon": "Share2", "color": "#e535ab", "category": "Backend" },
+  "Python": { "icon": "Code2", "color": "#facc15", "category": "Backend" },
+  "Docker": { "icon": "Container", "color": "#2496ed", "category": "DevOps" },
+  "Rust": { "icon": "Cog", "color": "#f97316", "category": "Backend" },
+  "React Native": { "icon": "Smartphone", "color": "#61dafb", "category": "Mobile" }
+}

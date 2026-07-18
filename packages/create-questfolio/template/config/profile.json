@@ -1,0 +1,12 @@
+{
+  "name": "Paula \"Latra\" Gallucci Zurita",
+  "title": "Software Engineer",
+  "tagline": "This is more a remember for me, than a description of who I am.",
+  "bio": "I'm a software engineer with a passion for building web applications and systems. I'm currently teaching how how networking is supposed to work at Lleida's University, and working as a software engineer researcher at Eurecat.",
+  "location": "Barcelona, Spain",
+  "email": "contact@latragallucci.com",
+  "socials": [
+    { "platform": "GitHub", "url": "https://github.com/latra", "icon": "Github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/paula-gallucci/", "icon": "Linkedin" }
+  ]
+}

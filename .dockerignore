@@ -1,0 +1,26 @@
+# Keep the build context small and force a clean install/build inside the image
+# rather than reusing anything built on the host.
+**/node_modules
+**/dist
+**/.vite
+**/.turbo
+**/coverage
+**/*.log
+
+.git
+.gitignore
+.dockerignore
+Dockerfile
+
+# Editor/OS cruft
+.DS_Store
+.vscode
+.idea
+
+# Design tooling artifacts, not needed at runtime
+.claude
+.impeccable
+**/.impeccable
+DESIGN.md
+PRODUCT.md
+CLAUDE.md

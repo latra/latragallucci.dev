@@ -1,0 +1,40 @@
+---
+id: xarxes-demo-lab
+title: Xarxes Lab Game
+description: A browser game that teaches computer networking by simulating real switch and PC consoles, from IP addressing to VLAN segmentation.
+status: building
+date: 2023-02-10
+updatedAt: 2026-03-22
+categories: [Game Dev, Education]
+technologies: [React, TypeScript]
+difficulty: 4
+progress: 50
+hoursInvested: 120
+featured: true
+repo: https://github.com/latra/xarxes-lab-game
+demo: http://xarxes.latragallucci.dev/
+---
+
+Xarxes Lab Game turns a networking lab session into a playable simulator. Built with
+**React**, **TypeScript** and **Phaser** for the game layer, with **PeerJS** wiring up
+peer-to-peer connections between the simulated machines, it recreates the terminals
+students would find in a real lab: a PC shell and a switch console reachable over a
+simulated serial link via `minicom`.
+
+Each quest walks the player through a full networking exercise:
+
+- **Physical setup** — cable two PCs to a switch and confirm the link from the switch
+  console with commands like `show vlan port`.
+- **IP configuration** — assign addresses on the PC terminal (`ip addr add`, `ip route`)
+  and verify connectivity between hosts with `ping`.
+- **VLAN segmentation** — create a second VLAN, move ports into it, and observe how
+  traffic between hosts on different VLANs gets isolated even though they're on the
+  same physical switch.
+- **Knowledge checkpoints** — short multiple-choice quizzes that check whether the
+  player actually understands *why* two hosts can or can't reach each other.
+- **Trunking** — restore connectivity across VLANs by linking switches together,
+  introducing 802.1Q trunk ports and inter-VLAN routing via switch virtual interfaces.
+
+The whole point is to make an abstract concept — "a VLAN is a virtual network created
+through switch configuration" — something you can poke at directly instead of just
+reading about it.

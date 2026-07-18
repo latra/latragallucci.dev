@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "label": "Home", "path": "/", "icon": "Home" },
+    { "label": "Projects", "path": "/projects", "icon": "Rocket" },
+    { "label": "Posts", "path": "/posts", "icon": "Newspaper" },
+    { "label": "Achievements", "path": "/achievements", "icon": "Trophy" },
+    { "label": "Skills", "path": "/skills", "icon": "Sparkles" },
+    { "label": "Timeline", "path": "/timeline", "icon": "CalendarClock" },
+    { "label": "About", "path": "/about", "icon": "User" }
+  ]
+}

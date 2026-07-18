@@ -1,0 +1,19 @@
+{
+  "name": "questfolio-monorepo",
+  "private": true,
+  "description": "Questfolio — a game-inspired framework for building gamified developer portfolios.",
+  "workspaces": [
+    "packages/*",
+    "packages/create-questfolio/template"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/core",
+    "test": "npm run test -w packages/core",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev:template": "npm run dev -w packages/create-questfolio/template"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

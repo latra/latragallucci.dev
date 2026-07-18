@@ -1,0 +1,20 @@
+---
+id: hackeps-discordbot
+title: HackEPS 2020 Discord Bot
+description: A Discord bot built to run the HackEPS 2020 hackathon server — schedules, participant info and community management in one place.
+status: completed
+date: 2020-10-26
+updatedAt: 2020-11-29
+categories: [Bots, Community, Hackathon]
+technologies: [Python, Docker]
+difficulty: 2
+featured: false
+hoursInvested: 40
+repo: https://github.com/latra/hackeps-2020-discordbot
+---
+
+The **HackEPS 2020 Discord Bot** was built to run the official Discord server for **HackEPS 2020**, forked and adapted from LleidaHack's hackathon bot base to fit that year's event.
+
+The codebase is split cleanly by responsibility: a `crud` layer for data persistence, `models` defining the underlying schemas, `modules` holding the actual bot commands and behavior, and a `texts` module keeping every user-facing message in one place instead of scattered across the command logic. It ships with a `Dockerfile` for containerized deployment and a small unit test suite runnable via `python -m unittest`.
+
+Written in **Python** on top of **discord.py**, the bot handled the day-to-day of keeping hundreds of hackers coordinated in a single server — the kind of unglamorous infrastructure that mostly needs to just work for 48 straight hours without anyone noticing it's there.

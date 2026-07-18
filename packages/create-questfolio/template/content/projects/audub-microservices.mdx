@@ -1,0 +1,29 @@
+---
+id: audub-microservices
+title: AU-DUB
+description: A microservices platform for fully automatic video dubbing — transcription, translation, voice cloning and re-muxing, orchestrated over a message queue.
+status: abandoned
+date: 2024-07-29
+updatedAt: 2024-08-24
+categories: [AI, Microservices, Video]
+technologies: [Python, PyTorch, MongoDB, Docker, Whisper]
+difficulty: 5
+progress: 20
+hoursInvested: 45
+featured: false
+repo: https://github.com/latra/AUDub-Microservices
+---
+
+**AU-DUB** is an attempt at a fully automated dubbing pipeline: drop in a video, and a chain of independent services should transcribe it, translate the transcript, clone the original speaker's voice, synthesize the translated audio, and mount it back onto the video — no manual editing in between.
+
+The architecture is split into decoupled services talking over **RabbitMQ**, with **MongoDB** holding job state and metadata between stages:
+
+- **Preprocessing** — pulls audio out of the source video and prepares it for the pipeline.
+- **Transcription** — speech-to-text via **OpenAI Whisper**.
+- **Translation** — moves the transcript between languages using a **Llama** model.
+- **Text-to-Speech** — synthesizes and clones the voice with **Coqui XTTS**.
+- **Mounter** — stitches the dubbed audio back onto the original video.
+
+Everything is containerized with **Docker Compose**, each service with its own Python requirements and configuration, so in theory the whole queue can scale horizontally as jobs pile up.
+
+In practice, this is the project that refuses to be finished. Every service works in isolation, the queue design is solid on paper, and there's always *one more* model, codec edge case, or sync-drift bug between audio and video that reopens the whole thing. It's less a shipped tool at this point and more a standing invitation to come back and chase the dubbing pipeline a little further down the rabbit hole.
