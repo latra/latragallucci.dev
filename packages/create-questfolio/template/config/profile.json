@@ -1,10 +1,22 @@
 {
-  "name": "Paula \"Latra\" Gallucci Zurita",
+  "name": "Paula Gallucci Zurita",
   "title": "Software Engineer",
-  "tagline": "This is more a remember for me, than a description of who I am.",
-  "bio": "I'm a software engineer with a passion for building web applications and systems. I'm currently teaching how how networking is supposed to work at Lleida's University, and working as a software engineer researcher at Eurecat.",
+  "tagline": "Software engineer working on networked systems: backend services, messaging, and the infrastructure in between.",
+  "bio": "I build backend services and the tooling around them, with a soft spot for anything that has to talk over a network. Alongside engineering work, I teach computer networks at the Universitat de Lleida, where I also build lab tools that let students configure switches and VLANs hands-on.",
   "location": "Barcelona, Spain",
   "email": "contact@latragallucci.com",
+  "roles": [
+    {
+      "title": "Research Software Engineer",
+      "org": "Eurecat",
+      "url": "https://eurecat.org"
+    },
+    {
+      "title": "Computer Networks Instructor",
+      "org": "Universitat de Lleida",
+      "url": "https://www.udl.cat"
+    }
+  ],
   "socials": [
     { "platform": "GitHub", "url": "https://github.com/latra", "icon": "Github" },
     { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/paula-gallucci/", "icon": "Linkedin" }

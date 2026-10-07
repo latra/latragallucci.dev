@@ -1,25 +1,20 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questfolio</title>
-    <script>
-      (function () {
-        try {
-          var stored = localStorage.getItem('qf-theme-mode');
-          var mode =
-            stored === 'light' || stored === 'dark'
-              ? stored
-              : window.matchMedia('(prefers-color-scheme: light)').matches
-                ? 'light'
-                : 'dark';
-          document.documentElement.dataset.qfMode = mode;
-        } catch (e) {
-          document.documentElement.dataset.qfMode = 'dark';
-        }
-      })();
-    </script>
+    <title>Paula Gallucci Zurita — Software Engineer</title>
+    <meta
+      name="description"
+      content="Software engineer in Barcelona working on backend services and networked systems. Research engineer at Eurecat and computer networks instructor at the Universitat de Lleida."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>
